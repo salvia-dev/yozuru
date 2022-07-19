@@ -4,10 +4,10 @@ import { getConfig } from './config';
 import { router } from './routes/index';
 
 const PORT = getConfig('PORT');
-const app = express();
+export const app = express();
 
 app.use(express.json());
-app.use(router);
+app.use('/api', router);
 app.use(cors({ origin: 'http://localhost:3000' }));
 
 if (getConfig('NODE_ENV') !== 'testing') {
