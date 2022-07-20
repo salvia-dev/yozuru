@@ -5,6 +5,7 @@ import path from 'path';
 const mockContainingTrackPath = path.resolve(
   __dirname,
   '..',
+  '..',
   'mocks',
   'tracks',
   'containing',
@@ -12,6 +13,7 @@ const mockContainingTrackPath = path.resolve(
 );
 const mockEmptyFolderTrackPath = path.resolve(
   __dirname,
+  '..',
   '..',
   'mocks',
   'tracks',

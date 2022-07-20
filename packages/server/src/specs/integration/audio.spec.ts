@@ -6,6 +6,7 @@ const mockPassableTrackPath = path.resolve(__dirname, '..', 'mocks', 'tracks', '
 const mockEmptyFolderTrackPath = path.resolve(
   __dirname,
   '..',
+  '..',
   'mocks',
   'tracks',
   'empty',

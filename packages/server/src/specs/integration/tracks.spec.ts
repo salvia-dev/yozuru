@@ -2,8 +2,15 @@ import request from 'supertest';
 import { app } from '../../app';
 import path from 'path';
 
-const mockContainingCatalogPath = path.resolve(__dirname, '..', 'mocks', 'tracks', 'containing');
-const mockEmptyCatalogPath = path.resolve(__dirname, '..', 'mocks', 'tracks', 'empty');
+const mockContainingCatalogPath = path.resolve(
+  __dirname,
+  '..',
+  '..',
+  'mocks',
+  'tracks',
+  'containing',
+);
+const mockEmptyCatalogPath = path.resolve(__dirname, '..', '..', 'mocks', 'tracks', 'empty');
 
 describe('Testing GET /api/tracks', () => {
   it('should return list of local songs', async () => {
