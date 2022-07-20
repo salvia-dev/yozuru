@@ -1,6 +1,6 @@
 import express from 'express';
-import { songsRouter } from './songs';
+import { tracksRouter } from './tracks';
 
 export const router = express.Router();
 
-router.use('/songs', songsRouter);
+router.use('/tracks', tracksRouter);
